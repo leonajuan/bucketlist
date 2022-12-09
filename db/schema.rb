@@ -16,6 +16,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_154137) do
 
   create_table "activities", force: :cascade do |t|
     t.string "name"
+    t.string "location"
+    t.string "address"
+    t.string "image"
+    t.boolean "completed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
